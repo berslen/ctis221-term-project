@@ -28,10 +28,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.DefaultListModel;
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
-import javax.swing.JTextField;
 import javax.swing.text.JTextComponent;
 
 public class ProductInfoScreen extends javax.swing.JFrame {
@@ -849,7 +847,7 @@ public class ProductInfoScreen extends javax.swing.JFrame {
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
         try {
             IProduct newProduct = null;
-
+            
             switch (currentProductType) {
                 case Book:
                     newProduct = createNewBook();
